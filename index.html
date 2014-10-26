@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ScrollTo</title>
+    <style type="text/css">
+    div.contentBox{
+         background: #fff;
+        height: 500px;
+        margin: 20px;
+        font-size: 28px;
+        border: 1px #ccc dashed;
+    }
+    </style>
+    <script type="text/javascript" src="autoScrollTo.js"></script>
+</head>
+<body>
+    <h2 id="myHeading">Smooth Scroll</h2>
+    <a href="#" onclick="return false;" onmousedown="autoScrollTo('div1');">Document Section 1</a><br>
+    <a href="#" onclick="return false;" onmousedown="autoScrollTo('div2');">Document Section 2</a><br>
+    <a href="#" onclick="return false;" onmousedown="autoScrollTo('div3');">Document Section 3</a><br>
+    <a href="#" onclick="return false;" onmousedown="autoScrollTo('div4');">Document Section 4</a><br>
+    
+    <div id="div1" class="contentBox">Div 1 content ....</div>
+    <a href="#" onclick="return false;" onmousedown="resetScroller('myHeading');">Back To Top</a>
+        
+    <div id="div2" class="contentBox">Div 2 content ....</div>
+    <a href="#" onclick="return false;" onmousedown="resetScroller('myHeading');">Back To Top</a>
+    
+    <div id="div3" class="contentBox">Div 3 content ....</div>
+    <a href="#" onclick="return false;" onmousedown="resetScroller('myHeading');">Back To Top</a>
+    
+    <div id="div4" class="contentBox">Div 4 content ....</div>
+    <a href="#" onclick="return false;" onmousedown="resetScroller('myHeading');">Back To Top</a>
+</body>
+</html>
